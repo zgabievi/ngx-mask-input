@@ -1,8 +1,20 @@
 {
   "name": "ngx-mask-input",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
-  }
+  },
+  "repository": {
+		"type": "git",
+		"url": "git+https://github.com/zgabievi/ngx-mask-input.git"
+	},
+	"keywords": [
+		"mask",
+		"input mask",
+		"mask input",
+		"input filter"
+	],
+	"author": "Zura Gabievi <zura.gabievi@gmail.com>",
+	"license": "MIT"
 }
