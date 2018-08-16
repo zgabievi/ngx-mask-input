@@ -1,5 +1,11 @@
 # ngx-mask-input
 
+[![NPM Version](https://img.shields.io/npm/v/ngx-mask-input.svg?style=flat-square)](https://www.npmjs.com/package/ngx-mask-input)
+[![NPM Size + Gzip](https://img.shields.io/bundlephobia/minzip/ngx-mask-input.svg?style=flat-square)](https://www.npmjs.com/package/ngx-mask-input)
+[![NPM Downloads](https://img.shields.io/npm/dt/ngx-mask-input.svg?style=flat-square)](https://www.npmjs.com/package/ngx-mask-input)
+[![NPM License](https://img.shields.io/npm/l/ngx-mask-input.svg?style=flat-square)](https://www.npmjs.com/package/ngx-mask-input)
+
+
 Library helps you to prevent users from **writing** or **pasting** values in inputs, that you don't want to allow. You can pass regular expression to your inputs "mask" attribute, and the things will be managed by itself.
 
 ## Table of Contents
