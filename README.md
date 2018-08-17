@@ -14,7 +14,7 @@ Library helps you to prevent users from **writing** or **pasting** values in inp
 - [Changelog](#changelog)
 - [Paperwork](#paperwork)
   - [Contributing](#contributing)
-  - [Issue / Feature Request](#issue-feature-request)
+  - [Issue / Feature Request](#issue--feature-request)
   - [Pull Request](#pull-request)
 - [Credits](#credits)
 - [License](#license)
