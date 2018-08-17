@@ -12,7 +12,10 @@ Library helps you to prevent users from **writing** or **pasting** values in inp
 - [Installation](#installation)
 - [Usage](#usage)
 - [Changelog](#changelog)
-- [Contributing](#contributing)
+- [Paperwork](#paperwork)
+  - [Contributing](#contributing)
+  - [Issue / Feature Request](#issue-feature-request)
+  - [Pull Request](#pull-request)
 - [Credits](#credits)
 - [License](#license)
 
@@ -59,11 +62,23 @@ export class AppModule { }
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+Please see [Changelog Page](https://github.com/zgabievi/ngx-mask-input/releases) for more information what has changed recently.
 
-## Contributing
+## Paperwork
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+### Contributing
+
+Please see [CONTRIBUTING.md](https://github.com/zgabievi/ngx-mask-input/blob/master/CONTRIBUTING.md) for details.
+
+### Issue / Feature Request
+
+To submit an issue correctly, please follow [instructions](https://github.com/zgabievi/ngx-mask-input/blob/master/.github/ISSUE_TEMPLATE.md#bug-report)
+
+If you have an idea, and you want to request feature, then read [this one](https://github.com/zgabievi/ngx-mask-input/blob/master/.github/ISSUE_TEMPLATE.md#feature-request)
+
+### Pull Request
+
+To crearte new pull request and add your piece of work in our project, go through this [steps](https://github.com/zgabievi/ngx-mask-input/blob/master/.github/PULL_REQUEST_TEMPLATE.md)
 
 ## Credits
 
@@ -73,4 +88,4 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
-The MIT License (MIT). Please see [License file](LICENSE) for more information.
+The MIT License (MIT). Please see [License file](https://github.com/zgabievi/ngx-mask-input/blob/master/LICENSE) for more information.
