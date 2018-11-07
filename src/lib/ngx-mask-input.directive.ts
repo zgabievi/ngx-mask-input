@@ -1,7 +1,5 @@
 import { Directive, HostListener, Input } from '@angular/core';
 
-declare var XRegExp;
-
 @Directive({
   selector: 'input[mask]'
 })
@@ -20,11 +18,6 @@ export class NgxMaskInputDirective {
   @HostListener('paste', ['$event'])
   onPaste($event): boolean {
     return this.filterInput($event);
-  }
-
-  //
-  private regex(pattern: string): any {
-    return !!XRegExp ? XRegExp(pattern) : RegExp(pattern);
   }
 
   //
@@ -49,7 +42,7 @@ export class NgxMaskInputDirective {
         }
 
         value = String.fromCharCode(pressedKey);
-        regex = this.regex(this.mask);
+        regex = new RegExp(this.mask);
         break;
 
       case 'paste':
@@ -65,7 +58,7 @@ export class NgxMaskInputDirective {
 
       case 'after_paste':
         value = $input.value;
-        regex = this.regex(`^(${this.mask})+$`);
+        regex = new RegExp(`^(${this.mask})+$`);
         break;
 
       default:
