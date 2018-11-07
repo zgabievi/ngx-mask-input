@@ -1,4 +1,6 @@
-import { Directive, Input, HostListener } from '@angular/core';
+import { Directive, HostListener, Input } from '@angular/core';
+
+declare var XRegExp;
 
 @Directive({
   selector: 'input[mask]'
@@ -21,6 +23,11 @@ export class NgxMaskInputDirective {
   }
 
   //
+  private regex(pattern: string): any {
+    return !!XRegExp ? XRegExp(pattern) : RegExp(pattern);
+  }
+
+  //
   private filterInput(event: any): boolean {
     const $input = event._input || event.target;
 
@@ -36,13 +43,13 @@ export class NgxMaskInputDirective {
         const pressedKey = event.charCode || event.keyCode || 0;
 
         if ([8, 9, 13, 35, 36, 37, 39, 46].indexOf(pressedKey) > -1) {
-          if (event.charCode === 0 && event.keyCode === pressedKey) {
+          if (event.charCode !== 0 && event.keyCode === pressedKey) {
             return true;
           }
         }
 
         value = String.fromCharCode(pressedKey);
-        regex = new RegExp(this.mask);
+        regex = this.regex(this.mask);
         break;
 
       case 'paste':
@@ -58,7 +65,7 @@ export class NgxMaskInputDirective {
 
       case 'after_paste':
         value = $input.value;
-        regex = new RegExp(`^(${this.mask})+$`);
+        regex = this.regex(`^(${this.mask})+$`);
         break;
 
       default:
