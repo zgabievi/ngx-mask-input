@@ -35,8 +35,12 @@ export class NgxMaskInputDirective {
       case 'keypress':
         const pressedKey = event.charCode || event.keyCode || 0;
 
+        if (pressedKey === 13) {
+          return true;
+        }
+
         if ([8, 9, 13, 35, 36, 37, 39, 46].indexOf(pressedKey) > -1) {
-          if (event.charCode !== 0 && event.keyCode === pressedKey) {
+          if (event.charCode === 0 && event.keyCode === pressedKey) {
             return true;
           }
         }
