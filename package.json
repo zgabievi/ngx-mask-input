@@ -2,8 +2,8 @@
   "name": "ngx-mask-input",
   "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
-    "@angular/core": "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0"
+    "@angular/common": "*",
+    "@angular/core": "*"
   },
   "repository": {
     "type": "git",
