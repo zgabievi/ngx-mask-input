@@ -45,7 +45,7 @@ export class NgxMaskInputDirective {
           }
         }
 
-        value = String.fromCharCode(pressedKey);
+        value = $input.value + String.fromCharCode(pressedKey);
         regex = new RegExp(this.mask);
         break;
 
